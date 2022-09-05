@@ -1,145 +1,139 @@
-body {
-  color: #40514E;
+* {
   margin: 0;
-  text-align: center;
-  font-family: 'Merriweather', serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #66BFBF;
-  font-size: 5.625rem;
-  margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
+body {
+  background: #222438;
+  color: white;
 }
 
-h2 {
-  color: #66BFBF;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  font-weight: normal;
-  padding-bottom: 10px;
+.navbar {
+  background-color: #202335;
+  width: 100%;
+  line-height: 5.625rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5.625rem;
 }
 
-h3 {
-  color: #11999E;
-  font-family: 'Montserrat', sans-serif;
-}
-
-p {
-  line-height: 2;
-}
-
-hr {
-  border: dotted #EAF6F6 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 100px auto;
-}
-
-a{
-  color: #11999E;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px 20px;
+.navbar a {
   text-decoration: none;
+  color: white;
+  font-family: sans-serif;
 }
 
-a:hover {
-  color: #EAF6F6;
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  margin-right: 1.25rem;
 }
 
-.top-container {
-  background-color: #E4F9F5;
-  position: relative;
-  padding-top: 100px;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.middle-container {
-  margin: 100px 0;
+.banner {
+  display: flex;
+  flex-direction: column;
+  padding: 12.5rem 0;
+  font-family: sans-serif;
+  gap: 1.25rem;
+  height: 60vh;
 }
 
-.bottom-container {
-  background-color: #66BFBF;
-  padding: 50px 0 20px;
+.heading {
+  font-size: 3.125rem;
 }
 
-.skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-}
-
-.pro {
-  text-decoration: underline;
-}
-
-.intro {
+.headingP {
   width: 30%;
-  margin: auto;
+  color: #aeb0ca49;
 }
 
-.contact-message {
-  width: 40%;
-  margin: 40px auto 60px;
+.bannerbtn {
+  padding: 0.625rem 1.875rem;
+  background-color: #f54853;
+  color: white;
+  border: none;
+  width: fit-content;
+  align-self: flex-start;
 }
 
-.copyright {
-  color: #EAF6F6;
-  font-size: 0.75rem;
-  padding: 20px 0;
+.Skill-set {
+  display: grid;
+  font-family: sans-serif;
+  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  align-self: flex-start;
 }
 
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 40px;
+.itemlist {
+  background-color: #292c3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.625rem;
+  padding: 1.25rem;
 }
 
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
+.itemlist img {
+  width: 6.25rem;
+  height: 6.25rem;
 }
 
-.code-img {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-
-
-}
-.demo{
-  height: 20px;
+.Skillss {
+  font-family: sans-serif;
+  color: #f54853;
 }
 
-.chilli-img {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
+.underline {
+  height: 0.1875rem;
+  width: 5rem;
+  border-radius: 0.625rem;
+  background: #f54853;
 }
 
-.btn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+.connect-with-me {
+  margin-top: 9.375rem;
+  height: 40vh;
 }
 
-.btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  text-decoration: none;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  width: 25rem;
+  padding-top: 3.125rem;
+}
+
+input[type="email"] {
+  padding: 0.9375rem 1.875rem;
+  color: #222438;
+  border: none;
+  background-color: #26283e;
+}
+
+input[type="text"] {
+  padding: 0.9375rem 1.875rem;
+  color: #222438;
+  border: none;
+  background-color: #26283e;
+}
+
+input[type="button"] {
+  padding: 0.625rem 1.875rem;
+  background-color: #f54853;
+  color: white;
+  border: none;
+  width: fit-content;
+  align-self: flex-end;
 }
